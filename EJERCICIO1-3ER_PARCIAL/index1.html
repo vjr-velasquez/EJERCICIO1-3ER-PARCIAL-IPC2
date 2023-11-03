@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+  <body>
+
+    X:<input type="text" id="txtX" name="txtX"/><br>
+
+    Y:<input type="text" id="txtY" name="txtY"/><br>
+
+    Z:<input type="text" id="txtZ" name="txtZ"/><br>
+
+    <button onclick="myFunction()">Calcular</button>
+
+ 
+
+    <p id="resultado"></p>
+
+ 
+
+    <script>
+
+    function myFunction() {
+
+      var x = document.getElementsByName("txtX")[0].value;
+
+      var y = document.getElementsByName("txtY")[0].value;
+
+      var z = document.getElementsByName("txtZ")[0].value;
+
+      var resultado = parseInt(x)+parseInt(y)+parseInt(z);
+
+      document.getElementById("resultado").innerHTML = resultado;
+
+    }
+
+    </script>
+
+ 
+
+  </body>
+
+</html>
+
